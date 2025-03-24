@@ -1,13 +1,14 @@
 import { Slot, Stack } from 'expo-router'
 import { ClerkProvider } from '@clerk/clerk-expo'
 import { tokenCache } from '@clerk/clerk-expo/token-cache'
+import { Colors } from '@/constants/Colors'
 
 const InitialLayout = () => {
   return (
     <Stack
       screenOptions={{
         headerShown: false,
-        contentStyle: { backgroundColor: 'aqua' },
+        contentStyle: { backgroundColor: Colors.background },
       }}
     >
       <Stack.Screen name='index' />
